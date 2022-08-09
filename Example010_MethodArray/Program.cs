@@ -6,21 +6,23 @@ int n = array.Length;
 int find = 421;
 
 
-int index = 0;
+int index = 0; // установили счетчик index в позицию 0
 
-while (index < n)
+while (index < n)   ////если index<0, то перейти к шагу сл строки, в противном случае алгоритм завершил работу безуспешно.
 
 {
 
-    if (array[index] == find)
+    if (array[index] == find) // если элемент 
+//                             //соотвествующий индексу совпадает с искомым элементом,
+//                             //то алгоритм завершил работу успешно. 
     {
 
         Console.WriteLine(index);
-        break;
+        break; //прервать алгоритм на первом найденном элементе
     }
 
         //index = index +1;
-        index++;
+        index++; //увкличить index на 1
 
 
 
